@@ -4,10 +4,7 @@ import dotenv from "dotenv";
 import express from "express";
 // @ts-ignore
 import cors from "cors";
-// @ts-ignore
-import mongoose from "mongoose";
 
-// Routes
 import userRoutes from "./routes/userRoues";
 
 dotenv.config();
