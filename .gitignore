@@ -83,10 +83,6 @@ $RECYCLE.BIN/
 .yarn/build-state.yml
 .yarn/install-state.gz
 
-# Vercel
-.vercel
-.vercel.json
-
 # Next.js
 .next/
 out/
