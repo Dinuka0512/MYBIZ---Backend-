@@ -30,8 +30,4 @@ app.use(
 // ✅ ROUTES
 app.use("/api/v1/user", userRoutes);
 
-
-// ✅ START SERVER
-app.listen(SERVER_PORT, () => {
-  console.log("Server is running on port : " + SERVER_PORT);
-});
+export default app;
