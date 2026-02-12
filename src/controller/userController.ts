@@ -80,7 +80,7 @@ MYBIZ - Your Business Managing Partner`;
             success: true,
             message: "Verification code sent successfully",
             email: email,
-            otp: process.env.NODE_ENV === "development" ? otp : undefined // Only in dev
+            otp: otp
         });
 
     } catch (err) {
