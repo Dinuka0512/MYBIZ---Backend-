@@ -1,0 +1,154 @@
+# Node modules
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
+
+# Build outputs
+dist/
+build/
+out/
+lib/
+*.tsbuildinfo
+
+# TypeScript cache
+*.tsbuildinfo
+tsconfig.tsbuildinfo
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory (testing)
+coverage/
+.nyc_output/
+
+# Temporary files
+tmp/
+temp/
+.temp/
+.tmp/
+
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional REPL history
+.node_repl_history
+.node_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn
+.yarn-integrity
+.yarn/
+.pnp.*
+.yarn/build-state.yml
+.yarn/install-state.gz
+
+# Vercel
+.vercel
+.vercel.json
+
+# Next.js
+.next/
+out/
+
+# Nuxt.js
+.nuxt/
+dist/
+
+# Vue
+vue-project/
+
+# Firebase
+firebase-debug.log
+firebase.json
+*.firebaserc
+firebase-service-account.json
+service-account.json
+service-account-key.json
+*-service-account.json
+
+# Environment files with secrets
+**/service-account*.json
+**/credentials.json
+**/key.json
+**/*-key.pem
+**/*.p12
+**/*.pem
+
+# AWS
+.aws/
+credentials
+config
+
+# SSH keys
+*.pem
+*.key
+*.crt
+*.cert
+
+# SSL certificates
+*.pem
+*.crt
+*.key
+cert/
+certs/
+
+# Docker
+.dockerignore
+Dockerfile
+docker-compose*.yml
+.docker/
+
+# Temp files from editors
+*.swp
+*.swo
+*~
+*.tmp
+*.temp
+
+# Package lock files - choose ONE
+# Use this if you use npm
+package-lock.json
+# OR uncomment these if you use yarn/pnpm
+# yarn.lock
+# pnpm-lock.yaml
