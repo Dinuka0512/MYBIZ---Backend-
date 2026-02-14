@@ -23,16 +23,28 @@ export async function sendMail(
     }>
 ): Promise<boolean> {
     try {
-        const info = await transporter.sendMail({
+        const mailOptions: any = {
             from: `"MYBIZ - One App. Every Business" <${process.env.USER_EMAIL}>`,
             to,
             subject,
             text,
-            html,
-            attachments
-        });
+            html
+        };
+
+        // Add attachments if provided
+        if (attachments && attachments.length > 0) {
+            mailOptions.attachments = attachments;
+        }
+
+        const info = await transporter.sendMail(mailOptions);
 
         console.log("✅ Email sent successfully:", info.messageId);
+        console.log("📧 To:", to);
+        console.log("📧 Subject:", subject);
+        if (attachments) {
+            console.log("📎 Attachments:", attachments.length);
+        }
+
         return true;
     } catch (error) {
         console.error("❌ Error sending email:", error);
