@@ -1,7 +1,7 @@
 import { Router } from "express";
-import { sendOtp } from "../controller/userController";
+import { sendBill } from "../controller/userController";
 
 const router = Router()
-router.post("/sendOtp", sendOtp)
+router.post("/sendBill", sendBill)
 
 export default router
